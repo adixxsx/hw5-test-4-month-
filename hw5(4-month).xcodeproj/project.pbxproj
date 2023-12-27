@@ -10,9 +10,13 @@
 		CE4AD3D02B3AC06B005521BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3CF2B3AC06B005521BF /* AppDelegate.swift */; };
 		CE4AD3D22B3AC06B005521BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3D12B3AC06B005521BF /* SceneDelegate.swift */; };
 		CE4AD3D42B3AC06B005521BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3D32B3AC06B005521BF /* ViewController.swift */; };
-		CE4AD3D72B3AC06B005521BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AD3D52B3AC06B005521BF /* Main.storyboard */; };
 		CE4AD3D92B3AC06C005521BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE4AD3D82B3AC06C005521BF /* Assets.xcassets */; };
 		CE4AD3DC2B3AC06C005521BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CE4AD3DA2B3AC06C005521BF /* LaunchScreen.storyboard */; };
+		CE4AD3E62B3AC100005521BF /* MakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3E52B3AC100005521BF /* MakerView.swift */; };
+		CE4AD3EB2B3AC540005521BF /* FurnitureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3EA2B3AC540005521BF /* FurnitureModel.swift */; };
+		CE4AD3EE2B3AC737005521BF /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = CE4AD3ED2B3AC737005521BF /* SnapKit */; };
+		CE4AD3F02B3AC9A5005521BF /* FurnitureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3EF2B3AC9A5005521BF /* FurnitureCell.swift */; };
+		CE4AD3F22B3AD464005521BF /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE4AD3F12B3AD464005521BF /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +24,13 @@
 		CE4AD3CF2B3AC06B005521BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CE4AD3D12B3AC06B005521BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CE4AD3D32B3AC06B005521BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CE4AD3D62B3AC06B005521BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CE4AD3D82B3AC06C005521BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE4AD3DB2B3AC06C005521BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CE4AD3DD2B3AC06C005521BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CE4AD3E52B3AC100005521BF /* MakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakerView.swift; sourceTree = "<group>"; };
+		CE4AD3EA2B3AC540005521BF /* FurnitureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureModel.swift; sourceTree = "<group>"; };
+		CE4AD3EF2B3AC9A5005521BF /* FurnitureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FurnitureCell.swift; sourceTree = "<group>"; };
+		CE4AD3F12B3AD464005521BF /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE4AD3EE2B3AC737005521BF /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +64,58 @@
 		CE4AD3CE2B3AC06B005521BF /* hw5(4-month) */ = {
 			isa = PBXGroup;
 			children = (
-				CE4AD3CF2B3AC06B005521BF /* AppDelegate.swift */,
-				CE4AD3D12B3AC06B005521BF /* SceneDelegate.swift */,
-				CE4AD3D32B3AC06B005521BF /* ViewController.swift */,
-				CE4AD3D52B3AC06B005521BF /* Main.storyboard */,
-				CE4AD3D82B3AC06C005521BF /* Assets.xcassets */,
-				CE4AD3DA2B3AC06C005521BF /* LaunchScreen.storyboard */,
+				CE4AD3E92B3AC50D005521BF /* Model */,
+				CE4AD3E82B3AC14B005521BF /* Resource */,
+				CE4AD3E72B3AC135005521BF /* Delegate */,
+				CE4AD3E42B3AC0D7005521BF /* Helper */,
+				CE4AD3E32B3AC0C6005521BF /* Controls */,
 				CE4AD3DD2B3AC06C005521BF /* Info.plist */,
 			);
 			path = "hw5(4-month)";
+			sourceTree = "<group>";
+		};
+		CE4AD3E32B3AC0C6005521BF /* Controls */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD3D32B3AC06B005521BF /* ViewController.swift */,
+				CE4AD3EF2B3AC9A5005521BF /* FurnitureCell.swift */,
+				CE4AD3F12B3AD464005521BF /* SecondVC.swift */,
+			);
+			path = Controls;
+			sourceTree = "<group>";
+		};
+		CE4AD3E42B3AC0D7005521BF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD3E52B3AC100005521BF /* MakerView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		CE4AD3E72B3AC135005521BF /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD3CF2B3AC06B005521BF /* AppDelegate.swift */,
+				CE4AD3D12B3AC06B005521BF /* SceneDelegate.swift */,
+			);
+			path = Delegate;
+			sourceTree = "<group>";
+		};
+		CE4AD3E82B3AC14B005521BF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD3D82B3AC06C005521BF /* Assets.xcassets */,
+				CE4AD3DA2B3AC06C005521BF /* LaunchScreen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		CE4AD3E92B3AC50D005521BF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				CE4AD3EA2B3AC540005521BF /* FurnitureModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +134,9 @@
 			dependencies = (
 			);
 			name = "hw5(4-month)";
+			packageProductDependencies = (
+				CE4AD3ED2B3AC737005521BF /* SnapKit */,
+			);
 			productName = "hw5(4-month)";
 			productReference = CE4AD3CC2B3AC06B005521BF /* hw5(4-month).app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +165,9 @@
 				Base,
 			);
 			mainGroup = CE4AD3C32B3AC06B005521BF;
+			packageReferences = (
+				CE4AD3EC2B3AC737005521BF /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = CE4AD3CD2B3AC06B005521BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +184,6 @@
 			files = (
 				CE4AD3DC2B3AC06C005521BF /* LaunchScreen.storyboard in Resources */,
 				CE4AD3D92B3AC06C005521BF /* Assets.xcassets in Resources */,
-				CE4AD3D72B3AC06B005521BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,7 +195,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE4AD3D42B3AC06B005521BF /* ViewController.swift in Sources */,
+				CE4AD3E62B3AC100005521BF /* MakerView.swift in Sources */,
+				CE4AD3F22B3AD464005521BF /* SecondVC.swift in Sources */,
+				CE4AD3EB2B3AC540005521BF /* FurnitureModel.swift in Sources */,
 				CE4AD3D02B3AC06B005521BF /* AppDelegate.swift in Sources */,
+				CE4AD3F02B3AC9A5005521BF /* FurnitureCell.swift in Sources */,
 				CE4AD3D22B3AC06B005521BF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,14 +207,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		CE4AD3D52B3AC06B005521BF /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CE4AD3D62B3AC06B005521BF /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CE4AD3DA2B3AC06C005521BF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -291,9 +343,9 @@
 				INFOPLIST_FILE = "hw5(4-month)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,9 +370,9 @@
 				INFOPLIST_FILE = "hw5(4-month)/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,6 +408,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CE4AD3EC2B3AC737005521BF /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CE4AD3ED2B3AC737005521BF /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CE4AD3EC2B3AC737005521BF /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CE4AD3C42B3AC06B005521BF /* Project object */;
 }
